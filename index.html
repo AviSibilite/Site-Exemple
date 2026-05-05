@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Paradis d'Avignon - Restaurant & Tapas</title>
+    <meta name="description"
+        content="Découvrez une expérience culinaire inoubliable près du Palais des Papes. Tapas colorés, cocktails exotiques et ambiance chaleureuse en plein cœur d'Avignon.">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🏰 Le Paradis d'Avignon</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#menu">Notre Menu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#reservation" class="btn-primary">Réserver</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Évadez-vous le temps d'un <span>repas</span></h1>
+            <p>Dégustez nos spécialités ensoleillées en plein cœur d'Avignon. Des couleurs plein les yeux et des saveurs
+                inoubliables au pied du Palais.</p>
+            <a href="#menu" class="btn-large">Découvrir la Carte <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image-container">
+            <div class="blob-shape"></div>
+            <img src="images/palais_papes.png" alt="Le majestueux Palais des Papes en Avignon" class="hero-image">
+            <div class="glass-card floating-card">
+                <i class="fas fa-star"></i>
+                <div>
+                    <h4>Le Choix des Touristes 2026</h4>
+                    <p>Recommandé à 92%</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <h2>Nos Plats Phares</h2>
+            <p>Découvrez nos créations signatures, préparées avec des ingrédients locaux et beaucoup d'amour.</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="images/pizza.png" alt="Pizza Margherita cuite au feu de bois">
+                    <div class="price-tag">14€</div>
+                </div>
+                <div class="menu-details">
+                    <h3>Pizza Margherita</h3>
+                    <p>L'incontournable classique avec sa pâte fine, sauce tomate maison et mozzarella fondante.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="images/burger.png" alt="Burger gourmet avec frites">
+                    <div class="price-tag">16€</div>
+                </div>
+                <div class="menu-details">
+                    <h3>Le Burger d'Avignon</h3>
+                    <p>Un burger gourmet généreux, pain brioché artisanal, bœuf haché frais et fromage coulant.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-image">
+                    <img src="images/steak.png" alt="Pièce du boucher grillée">
+                    <div class="price-tag">26€</div>
+                </div>
+                <div class="menu-details">
+                    <h3>La Pièce du Boucher</h3>
+                    <p>Notre viande sélectionnée, grillée à la perfection, accompagnée de ses petites pommes de terre
+                        rôties.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="#reservation" class="btn-primary">Réserver ma table</a>
+        </div>
+    </section>
+
+    <section id="galerie" class="photo-gallery">
+        <div class="section-header">
+            <h2>Notre Univers en Images</h2>
+            <p>Plongez dans l'ambiance colorée et chaleureuse de notre établissement.</p>
+        </div>
+        <div class="gallery-grid">
+            <img src="images/avignon_interior.png" alt="Intérieur chic avec murs en pierres et décoration provençale"
+                class="gallery-img">
+            <img src="images/avignon_terrace.png" alt="Magnifique terrasse ensoleillée en Avignon" class="gallery-img">
+        </div>
+    </section>
+
+    <section class="gallery-preview">
+        <h2>L'Ambiance</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-circle bg-summer-orange"><i class="fas fa-cocktail"></i></div>
+                <h3>Cocktails Créations</h3>
+                <p>Nos mixologues préparent des boissons aussi belles que délicieuses.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-circle bg-summer-blue"><i class="fas fa-umbrella-beach"></i></div>
+                <h3>Terrasse Panoramique</h3>
+                <p>Profitez d'une vue imprenable sur la ville d'Avignon.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-circle bg-summer-pink"><i class="fas fa-music"></i></div>
+                <h3>Soirées Live</h3>
+                <p>Des musiciens locaux animent vos soirées tous les week-ends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="histoire" class="story-section">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>L'Histoire du Paradis d'Avignon</h2>
+                <p>Né de la passion du Chef fictif <strong> Dubois</strong>, <em>Le Paradis d'Avignon</em> a
+                    ouvert ses portes avec une seule idée en tête : fusionner l'authenticité de la Provence avec des
+                    touches de modernité méditerranéenne. Ancien relais de poste restauré, notre établissement vous
+                    accueille dans un cadre atypique où chaque détail a été pensé pour vous faire voyager.</p>
+                <p>Notre engagement ? Travailler exclusivement avec des producteurs locaux du Vaucluse pour vous
+                    garantir des assiettes colorées, saines et riches en goût. Que ce soit pour un déjeuner sur le pouce
+                    à l'ombre du Palais ou un dîner romantique à la tombée de la nuit, notre équipe a hâte de vous
+                    recevoir.</p>
+            </div>
+            <div class="story-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Producteurs Locaux</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Fait Maison</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="section-header">
+            <h2>Réserver une Table</h2>
+            <p>Assurez-vous d'avoir une place en réservant dès maintenant. Simple, rapide et gratuit.</p>
+        </div>
+        <div class="reservation-container">
+            <form id="reservation-form" class="reservation-form">
+                <div class="form-group">
+                    <label for="res-name">Nom complet</label>
+                    <input type="text" id="res-name" required placeholder="Ex: Jean Dupont">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="res-date">Date</label>
+                        <input type="date" id="res-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-time">Heure</label>
+                        <select id="res-time" required>
+                            <option value="">Sélectionnez une heure</option>
+                            <optgroup label="Service du Midi">
+                                <option value="11:30">11:30</option>
+                                <option value="11:45">11:45</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:15">12:15</option>
+                                <option value="12:30">12:30</option>
+                                <option value="12:45">12:45</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:15">13:15</option>
+                                <option value="13:30">13:30</option>
+                            </optgroup>
+                            <optgroup label="Service du Soir">
+                                <option value="19:30">19:30</option>
+                                <option value="19:45">19:45</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:15">20:15</option>
+                                <option value="20:30">20:30</option>
+                                <option value="20:45">20:45</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:15">21:15</option>
+                                <option value="21:30">21:30</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="res-guests">Nombre de personnes</label>
+                    <input type="number" id="res-guests" required min="1" max="20" value="2">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem; font-size: 1.1rem; padding: 1rem;">Confirmer la réservation</button>
+                <div id="reservation-message" style="display: none; text-align: center; margin-top: 1rem; font-weight: 600;"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>🏰 Le Paradis d'Avignon</h3>
+                <p>Votre oasis gourmande au cœur de la Cité des Papes. Venez pour le cadre, restez pour les saveurs.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact & Accès</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 15 Place du Palais, 84000 Avignon</p>
+                <p><i class="fas fa-phone"></i> +33 4 90 00 00 00</p>
+                <p><i class="fas fa-envelope"></i> restaurant@paradis-avignon.fr</p>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Le Paradis d'Avignon. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -111,7 +111,7 @@
 
                 tr.innerHTML = `
                     <td><strong>${formattedDate}</strong> à ${res.time}</td>
-                    <td>${res.name}</td>
+                    <td>${res.name}<br><small style="color: #666;"><i class="fas fa-envelope"></i> ${res.email || 'Non renseigné'}</small></td>
                     <td><i class="fas fa-user"></i> ${res.guests}</td>
                     <td><span class="status-badge ${res.status === 'confirmed' ? 'status-confirmed' : 'status-pending'}">${res.status === 'confirmed' ? 'Confirmée' : 'Nouvelle'}</span></td>
                     <td>

@@ -89,6 +89,13 @@ if (resForm) {
         reservations.push(reservation);
         localStorage.setItem('reservations', JSON.stringify(reservations));
         
+        // Préparation et déclenchement de l'email vers le restaurateur
+        const emailRestaurateur = "restaurant@paradis-avignon.fr";
+        const subject = encodeURIComponent(`Nouvelle Réservation : ${name} le ${date}`);
+        const body = encodeURIComponent(`Bonjour,\n\nUne nouvelle réservation a été effectuée sur votre site web :\n\n- Nom : ${name}\n- Date : ${date}\n- Heure : ${time}\n- Nombre de couverts : ${guests}\n\nRetrouvez le détail dans votre Espace Restaurateur.\n\nCordialement,\nLe système de réservation`);
+        
+        window.location.href = `mailto:${emailRestaurateur}?subject=${subject}&body=${body}`;
+        
         // Message de succès
         resForm.reset();
         resMessage.textContent = 'Votre réservation a été confirmée avec succès !';

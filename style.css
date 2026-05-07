@@ -69,6 +69,7 @@ h2 {
     margin-bottom: 1rem;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -354,6 +355,7 @@ p {
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
+.features {
     list-style: none;
     margin-bottom: 2rem;
 }
@@ -513,6 +515,7 @@ p {
     font-weight: 800;
     background: linear-gradient(135deg, var(--secondary), var(--primary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
@@ -639,6 +642,7 @@ footer {
 .reservation-container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .reservation-form {
@@ -662,16 +666,13 @@ footer {
 }
 
 .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-@media (max-width: 600px) {
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+.form-row > .form-group {
+    flex: 1 1 250px;
 }
 
 .form-group label {
@@ -691,6 +692,8 @@ footer {
     outline: none;
     color: var(--dark);
     background-color: white;
+    width: 100%;
+    max-width: 100%;
 }
 
 .form-group input:focus,
@@ -728,7 +731,9 @@ footer {
     }
 
     .reservation-form {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.2rem;
+        width: 100%;
+        max-width: 100%;
     }
 }
 

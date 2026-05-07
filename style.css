@@ -667,6 +667,13 @@ footer {
     gap: 1.5rem;
 }
 
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
 .form-group label {
     font-weight: 600;
     color: var(--dark);
@@ -718,6 +725,10 @@ footer {
         bottom: -10px;
         width: 100%;
         justify-content: center;
+    }
+
+    .reservation-form {
+        padding: 2rem 1.5rem;
     }
 }
 
